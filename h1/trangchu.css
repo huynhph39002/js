@@ -1,0 +1,35 @@
+*{
+  margin: 0;
+  padding: 0;
+
+}
+.container{
+  width: 1000px;
+  margin: 0 auto;
+
+}
+.header img{
+  width: 1000px;
+  height: 450px;
+}
+.menu ul li{
+ 
+  
+}
+.menu ul{
+  list-style: none;
+  background-color: #8DD8F7;
+ text-align: center;
+  display: flex;
+  padding-left:350px ;
+  
+}
+a{
+  padding:30px ;
+  text-decoration: none;
+  
+}
+a:hover{
+  color: red;
+}
+

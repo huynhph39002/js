@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title>Vietnam Eli Airlines - Giới thiệu</title>
+	<link rel="stylesheet" href="datve.css">
+	<script src="datve.js"></script>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+		header {
+			background-color: #0072C6;
+			color: #fff;
+			padding: 20px;
+		}
+
+		h1 {
+			margin: 0;
+		}
+
+		nav {
+			background-color: #F2F2F2;
+			border-bottom: 1px solid #ccc;
+			padding: 10px;
+		}
+
+		nav ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		nav li {
+			display: inline-block;
+			margin-right: 10px;
+		}
+
+		nav a {
+			color: #0072C6;
+			display: block;
+			padding: 10px;
+			text-decoration: none;
+		}
+
+		nav a:hover {
+			background-color: #0072C6;
+			color: #fff;
+		}
+
+		main {
+			margin: 20px;
+		}
+
+		section {
+			margin-bottom: 20px;
+		}
+		.thongbao{
+			color: red;
+		}
+		.test{
+			color: red;
+		}
+		.lien{
+			display: flex;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<h1>Vietnam Eli Airlines</h1>
+		<p>Bay đến mọi miền đất nước Việt Nam</p>
+		<div class="search">
+			<input type="text" placeholder="Bạn muốn tìm gì?">
+			<button type="submit">tìm kiếm
+		</div>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="gioithieu.html">Giới thiệu</a></li>
+			<li><a href="datve.html">Đặt vé</a></li>
+			<li><a href="lienhe.html">Liên hệ</a></li>
+		</ul>
+</body>
+<div class="container">
+	<table>
+		<tbody>
+			<tr>
+				<th>
+					<label for=""> Họ Và Tên</label>
+					<span class="test">(*)</span>
+				</th>
+
+				<td>
+					<input type="text" id="hoten">
+					<br>
+					<span class="thongbao"></span>
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<label for="">Chứng Minh Thư</label>
+					<span class="test">(*)</span>
+				</th>
+				<td>
+					<input type="text" id="cmt">
+					<br><span class="thongbao"></span>
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<label for="">Email</label>
+					<span class="test">(*)</span>
+				</th>
+				<td>
+					<input type="text" id="email">
+					<br>
+					<span class="thongbao"></span>
+				</td>
+			</tr>
+			<tr>
+				<th class="lien">
+					<p>Giới Tính</p>
+					<span class="test">(*)</span>
+				</th>
+				<th>
+					<input type="radio" name="huynh6" id="full6">
+					<label for="full6">Nam</label>
+					<input type="radio" name="huynh6" id="part6">
+					<label for="part6">Nữ</label>
+					<br>
+					<span class="thongbao"></span>
+				</th>
+			</tr>
+			<tr>
+				<th>
+					<label for="">Số Điện Thoại</label>
+					<span class="test">(*)</span>
+				</th>
+				<th><input type="text">
+					<br>
+					<span class="thongbao"></span>
+				</th>
+			</tr>
+			<tr>
+				<th>
+					<p>Chọn chuyến bay</p>
+					<span class="test">(*)</span>
+				</th>
+				<th><select name="" id="">
+						<option value="">--chọn--</option>
+						<option value="">Hà nội</option>
+						<option value="">tp hcm</option>
+						<option value="">Đà nẵng</option>
+					</select>
+					<br>
+					<span class="thongbao"></span>
+				</th>
+			</tr>
+			<tr>
+				<th>
+					<p>Ngày sinh</p>
+					<span class="test">(*)</span>
+				</th>
+				<th><input type="date">
+					<br>
+					<span class="thongbao"></span>
+				</th>
+			</tr>
+			<tr>
+				<th>
+					<p>Hành lý</p>
+					<span class="test">(*)</span>
+				</th>
+				<th>
+					<input type="text">
+					<br>
+					<span class="thongbao"></span>
+				</th>
+			</tr>
+			<tr>
+				<th>
+					<p>Hình thức thanh toán</p>
+					<span class="test">(*)</span>
+				</th>
+				<th><select name="" id="">
+						<option value="">--chọn--</option>
+						<option value="">chuyển khoản</option>
+						<option value="">tiền mặt</option>
+					</select><br>
+					<span class="thongbao"></span>
+				</th>
+			</tr>
+			<tr>
+				<th><button onclick="submit()">reset</button></th>
+				<th><button onclick="submit()">Đặt vé</button></th>
+			</tr>
+
+		</tbody>
+	</table>
+</div>
+<script>
+	alert("Xin chào đây là hãng hàng không Vietnam airlines")
+</script>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <form >
+    <label for="">loại hàng:</label>
+<select name="" id="tyde" onchange="cn()">
+  <option value="chuachon"> chọnn loại</option>
+  <option value="tyde1"> loại1 </option>
+  <option value="tyde2">loại 2</option>
+  <option value="tyde3"> loại 3</option>
+</select><span class="thongbao"></span>
+
+<label for="">đơn giá:</label>
+<input type="number" id="price" readonly>
+
+  </form>
+
+  <script>
+    let thongBao=document.getElementsByClassName('thongbao');
+    if(tyde==="chuachon"){
+      thongBao[0].innerHTML="mời chọn loại hàng";
+    }
+     function cn(){
+      const tyde=document.getElementById('tyde').value;
+      let price=0;
+
+      if(tyde==="tyde1"){
+        price=123;
+      }
+      else if(tyde==="tyde2"){
+        price=1234;
+      }
+      else if(tyde==="tyde3"){
+        price=12345;
+      }
+      document.getElementById("price").value=price;
+     }
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+                table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+    </style>
+</head>
+<body>
+    
+    <input type="radio" id="pass" onclick="locTheoDiemDo()"><a> điểm đỗ</a>
+    <input type="radio" id="fail" onclick="locTheoDiemTruot()"><a>điểm truọt</a>
+    <input type="radio" id="diemtoan" onclick="diemtoan()"><a>điểm toán </a>
+    <input type="radio" id="diemvan" onclick="diemvan()"><a>điểm văn </a>
+    <input type="radio" id="diemanh" onclick="diemanh()"><a>điểm anh </a>
+    
+    <table id="myTable">
+        <thead>
+          <tr>
+            <th>STT</th>
+            <th>Họ và tên</th>
+            <th>Điểm Toán</th>
+            <th>Điểm văn</th>
+            <th>Điểm Anh</th>
+            <th>Điểm trung bình</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Nguyễn Văn A</td>
+            <td class="diemtoan">9</td>
+            <td class="diemvan">2</td>
+            <td class="diemanh">5 </td>
+            <td class="diemTB"></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Nguyễn Văn B</td>
+            <td class="diemtoan">3</td>
+            <td class="diemvan">5</td>
+            <td class="diemanh">8 </td>
+            <td class="diemTB"></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Nguyễn Văn C</td>
+            <td class="diemtoan">2</td>
+            <td class="diemvan">2</td>
+            <td class="diemanh">5 </td>
+            <td class="diemTB"></td>
+          </tr>
+       
+          <tr>
+            <td>4</td>
+            <td>Nguyễn Văn D</td>
+            <td class="diemtoan">5</td>
+            <td class="diemvan">2</td>
+            <td class="diemanh">5 </td>
+            <td class="diemTB"></td>
+          </tr>
+        </tbody>
+      </table>
+      
+</body>
+<script>
+    let arrdiemtoan=document.getElementsByClassName('diemtoan')
+    let arrdiemvan=document.getElementsByClassName('diemvan')
+    let arrdiemanh=document.getElementsByClassName('diemanh')
+    let arrdiemtb=document.getElementsByClassName('diemTB')
+ for(let i=0;i<=arrdiemtb.length-1;i++){
+    let diemtoan=Number(arrdiemtoan[i].innerText);
+    let diemvan=Number(arrdiemvan[i].innerText)
+    let diemanh=Number(arrdiemanh[i].innerText)
+    let diemtb=(diemtoan+diemvan+diemanh)/3
+    arrdiemtb[i].innerText=diemtb
+ }
+ function locTheoDiemDo() {
+for(let i=0;i<=arrdiemtb.length-1;i++){
+    let diemtb=Number(arrdiemtb[i].innerText)
+    if(diemtb>=5){
+        arrdiemtb[i].style.backgroundColor="yellow"
+    }else{
+        arrdiemtb[i].style.backgroundColor="white"
+    }
+}
+}
+
+// Lọc theo điểm trượt
+function locTheoDiemTruot() {
+
+    for(let i=0;i<=arrdiemtb.length-1;i++){
+    let diemtb=Number(arrdiemtb[i].innerText)
+    if(diemtb<=5){
+        arrdiemtb[i].style.backgroundColor="red"
+    }else{
+        arrdiemtb[i].style.backgroundColor="white"
+    }
+}
+}
+function diemtoan(){
+    for(let i=0;i<=arrdiemtoan.length-1;i++){
+        let diemtoan=Number(arrdiemtoan[i].innerText)
+        if(diemtoan>=5){
+            arrdiemtoan[i].style.backgroundColor="yellow"
+        }else{
+            arrdiemtoan[i].style.backgroundColor="white"
+        }
+    }
+}
+function diemvan(){
+    for(let i=0;i<=arrdiemvan.length-1;i++){
+        let diemvan=Number(arrdiemvan[i].innerText)
+        if(diemvan>=5){
+            arrdiemvan[i].style.backgroundColor="yellow"
+        }else{
+            arrdiemvan[i].style.backgroundColor="white"
+        }
+    }
+}
+function diemanh(){
+    for(let i=0;i<=arrdiemanh.length-1;i++){
+        let diemanh=Number(arrdiemanh[i].innerText)
+        if(diemanh>=5){
+            arrdiemanh[i].style.backgroundColor="yellow"
+        }else{
+            arrdiemanh[i].style.backgroundColor="white"
+        }
+    }
+}
+</script>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .slide {
+        display: none;
+    }
+
+    .slide img {
+        width: 30%;
+        height: 300px;
+
+    }
+</style>
+<script>
+    let inde=0;
+    function slideshow(){
+        let anh =document.getElementsByName('slide');
+        if(inde>anh.length-1){
+            inde=0;
+        }
+        if(inde<0){
+            inde = anh.length-1;
+        }
+        for (let i = 0; i < anh.length; i++) {
+           anh[i].slide.display="none";
+            
+        }
+        anh[inde].slide.display="block";
+    }
+    slideshow();
+    function prive(){
+        inde++;
+        slideshow();
+    }
+    function last(){
+        inde--;
+        slideshow();
+    }
+    function auto(){
+        let a=setInterval(function(){prive()},1500);
+    }
+    function stop(){
+        clearInterval(a);
+    }
+
+
+</script>
+
+<body>
+    <div class="slide">
+        <h1>1/3</h1>
+        <img src="https://2.bp.blogspot.com/-bQTld96S_qs/UkP79rKafVI/AAAAAAAAAhU/c4dWVQ1b874/s1600/anh-dep-hinh-nen-thien-nhien-2.jpg"
+            alt="">
+    </div>
+    <div class="slide">
+        <h1>2/3</h1>
+        <img src="https://1.bp.blogspot.com/-a71p9zvla98/UkP4-cPfK4I/AAAAAAAAAg8/va9AmdChErg/s1600/anh-dep-hinh-nen-thien-nhien-0.jpg"
+            alt="">
+    </div>
+    <div class="slide">
+        <h1>3/3</h1>
+        <img src="https://4.bp.blogspot.com/-aCNC9YAKSA4/UkP_GGvMcZI/AAAAAAAAAh0/_QBFRsijhQc/s1600/anh-dep-hinh-nen-thien-nhien-6.jpg"
+            alt="">
+    </div>
+    <button type="button" onclick="Previous()">Trước</button>
+    <button type="button" onclick="Next()">Sau</button>
+    <button type="button" onclick="Auto()">Auto</button>
+    <button type="button" onclick="Stop()">Stop</button>
+
+</body>
+
+</html>

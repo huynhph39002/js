@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+    <img  id="anh"  src="./anh/Son-Tung-2.jpg" onclick="change()" width="450px" height="400px">
+    </div>
+    <button onclick="first()">First</button>
+    <button onclick="back()">Back</button>
+    <button onclick="Play()">Play</button>
+    <button onclick="stop()">Stop</button>
+    <button onclick="next()">Next</button>
+    <button onclick="last()">Last</button>
+</body>
+<script>
+    let arrimg=[
+        "./anh/Son-Tung-2.jpg",
+        "./anh/Son-Tung-MTP-lo-anh-dung-do-doi-voi-Thieu-Bao-Tram-9.jpg",
+        "./anh/son-tung-tung-mong-muon-trao-nhan-dinh-hon-cho-ban-gai-nam-28-tuoi-6836bf55.jpg",
+    ]
+    let id=0;
+    let index;
+    let anh=document.getElementById('anh');
+    
+
+    function play(){
+    id++;
+    if(id>=arrimg.length){
+        id=0
+    }
+    let img=arrimg[id];
+    anh.src=img
+ 
+}
+function back(){
+    id++;
+    if(id>=arrimg.length){
+        id=0
+    }
+    let img=arrimg[id];
+    anh.src=img
+ clearInterval(index)
+}
+function next(){
+    id--;
+    if(id<0){
+        id=arrimg.length-1;
+    }
+    let lui=arrimg[id];
+    anh.src=lui
+    clearInterval(index)
+}
+function first(){
+    id=[0];
+    let anhdau=arrimg[id];
+    anh.src=anhdau
+    clearInterval(index)
+}
+function last(){
+    id=[2];
+    let anhcuoi=arrimg[id];
+    anh.src=anhcuoi
+    clearInterval(index)
+}
+function Play(){
+    if(index==null){
+        index=setInterval(play,500);
+    } else {
+        clearInterval(index);
+        index=setInterval(play,500);
+    }
+}
+function stop(){
+    clearInterval(index);
+}
+</script>
+</html>

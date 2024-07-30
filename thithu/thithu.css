@@ -1,0 +1,25 @@
+.from{
+   justify-content: center;
+   align-items: center;
+   border: 1px solid black;
+   width: 400px;
+   margin-left: 140px;
+}
+body
+{
+    margin: auto;
+    margin-left: 360px;
+}
+html ,input ,label, button{
+    cursor: pointer;
+}
+footer{
+    margin-top: 20px;
+}
+strong{
+   margin-left: 110px;
+  
+}
+label{
+    margin-left: 20px;
+}

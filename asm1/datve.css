@@ -1,0 +1,92 @@
+body{
+    
+    margin: auto;
+}
+.container{
+    
+    margin: auto;
+    border: 1px solid black;
+    
+    background-color:pink;
+}
+th{
+  font-size: 17px;
+}
+input{
+  font-size: 26px;
+}
+thead tr{
+    color: white;
+    background-color: rgb(74, 145, 251);
+}
+table{
+text-align: center;
+justify-content: center;
+margin-left: 9px;
+margin-top: 5px;
+margin-bottom: 5px;
+}
+tbody th{
+    text-align: left;
+    border: 1px solid black;
+}
+tbody td{
+  
+  text-align: left;
+  border: 1px solid black;
+}
+select{
+ padding:3px 15px;  
+}
+*{
+    margin: 0;
+    padding: 0;
+  
+  }
+  .container{
+    width: 514px;
+    margin: 0 auto;
+  
+  }
+  .header img{
+    width: 1000px;
+    height: 450px;
+  }
+  .menu ul{
+    list-style: none;
+    background-color: #8DD8F7;
+   text-align: center;
+    display: flex;
+    padding-left:350px ;
+    
+  }
+  a{
+    padding:30px ;
+    text-decoration: none;
+    
+  }
+  a:hover{
+    color: red;
+  }
+  button{
+    padding: 0px 20px;
+    cursor: pointer;
+  }
+  input{
+    cursor: pointer;
+  }
+  label{
+    cursor: pointer;
+  }
+  .search button{
+    padding: 10px 30px;
+}
+.search input{
+    padding: 0 40px;
+}
+.search{
+    display: flex;
+    text-align:center;
+    justify-content: right;
+}
+  

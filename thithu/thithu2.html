@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="thithu2.css">
+    <script src="thithu2.js"></script>
+</head>
+<body>
+    <div class="slideshow">
+        <img src="https://th.bing.com/th/id/R.2a8112831023bb4d9414c24f698c278f?rik=vxe5JgEq0TWJeg&pid=ImgRaw&r=0">
+        <img src="https://scr.vn/wp-content/uploads/2020/07/%E1%BA%A3nh-n%E1%BB%81n-c%E1%BB%B1c-%C4%91%E1%BB%99c-d%C3%A1o.jpg">
+        <img src="https://th.bing.com/th/id/R.8c682824f8970b3ecb1fa253f4329d98?rik=QP%2ftkfKN6UEOgg&riu=http%3a%2f%2fthuthuatphanmem.vn%2fuploads%2f2017%2f11%2f05%2fhinh-nen-4k-dep-10_124945.jpg&ehk=%2fR3uXbmRi7sZ0KF13%2bBx5WwvaZEnoLHRbzWQhHWRa18%3d&risl=&pid=ImgRaw&r=0">
+        <img src="https://lh3.googleusercontent.com/pw/ACtC-3f4xT1fNtnqkxXgMWen8eWxRhAwcKQpTwUQG9eoRSoDs2VrD5ORxddSRULxiHCGPLJZmO0BY3exf7ZzCccBJsA6eyifaXPxl5Tq6KrmGKNk0BmFiPgTjO8eoFbY04LbHlAkBNDGVGGtSJwyaQKGf5tc=w1186-h667-no?authuser=0">
+        <img src="https://img4.thuthuatphanmem.vn/uploads/2020/05/13/anh-nen-desktop-4k_062607771.jpg">
+      </div>
+      
+      <style>
+        .slideshow {
+          position: relative;
+          height: 400px;
+          width: 600px;
+          overflow: hidden;
+        }
+      
+        .slideshow img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          opacity: 0;
+          transition: opacity 1s ease-in-out;
+        }
+      
+        .slideshow img.active {
+          opacity: 1;
+        }
+      </style>
+    
+</body>
+</html>

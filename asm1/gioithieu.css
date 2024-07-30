@@ -1,0 +1,21 @@
+.chu{
+    margin-top: 30px;
+}
+.linhcute{
+    font-size: 40px;
+}
+.entry-content{
+    margin-top: 40px;
+    
+}
+.search button{
+    padding: 10px 30px;
+}
+.search input{
+    padding: 0 40px;
+}
+.search{
+    display: flex;
+    text-align:center;
+    justify-content: right;
+}

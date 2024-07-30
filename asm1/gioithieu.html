@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Vietnam Eli Airlines - Giới thiệu</title>
+    <link rel="stylesheet" href="gioithieu.css">
+    <script src="gioithieu.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #0072C6;
+            color: #fff;
+            padding: 20px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        nav {
+            background-color: #F2F2F2;
+            border-bottom: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        nav a {
+            color: #0072C6;
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #0072C6;
+            color: #fff;
+        }
+        .bt button{
+
+        background-color: pink;
+        font-size: 15px;
+        border: 1px solid white;
+            
+        }
+    </style>
+</head>
+<header>
+    <h1>Vietnam Eli Airlines</h1>
+    <p>Bay đến mọi miền đất nước Việt Nam</p>
+    <div class="search">
+        <input type="text" placeholder="Bạn muốn tìm gì?" id="tim">
+        
+        
+        <button onclick="timkiem()">tìm kiếm
+    </div><span class="thongbao"></span>
+</header>
+<nav>
+    <ul>
+        <li><a href="gioithieu.html">Giới thiệu</a></li>
+        <li><a href="datve.html">Đặt vé</a></li>
+        <li><a href="lienhe.html">Liên hệ</a></li>
+    </ul>
+</nav>
+<script>
+    alert("Xin chào đây là hãng hàng không Vietnam airlines")
+
+
+
+    let arr = [
+        "https://th.bing.com/th/id/R.f6aae1ead3a6b4c21d70afe08fbb6118?rik=oE5gJupEvf8wBQ&pid=ImgRaw&r=0",
+        "https://giupban.com.vn/wp-content/uploads/Hinh-nen-may-bay-dep-full-hd-Ohaylam.com-14.jpg",
+        "https://giupban.com.vn/wp-content/uploads/sai-canh-bay-cao-cung-ve-may-bay-gia-re-bao-ngoc.jpg"
+    ]
+    let id = 0;
+    function change() {
+        id++;
+        if (id >= arr.length)
+            id = 0
+        let anh = document.getElementById('anh')
+        let img = arr[id];
+        anh.src = img
+    }
+    function change2() {
+        id--;
+        if (id < 0) {
+            id = arr.length - 1;
+        }
+        let anh = document.getElementById('anh')
+        let img = arr[id];
+        anh.src = img
+    }
+
+</script>
+
+<body>
+    <img src="https://th.bing.com/th/id/R.f6aae1ead3a6b4c21d70afe08fbb6118?rik=oE5gJupEvf8wBQ&pid=ImgRaw&r=0" id="anh"
+        width="500px" height="400px">
+    <div class="bt">
+    <button id="change2" onclick="change2()">lùi</button>
+    <button id="change" onclick="change()"> tiến</button></div>
+
+
+
+    <div class="entry-content">
+        <strong class="linhcute">Giới thiệu về vietnam airlines</strong>
+        <p>Là hãng hàng không ra đời sớm nhất tại Vietnam, hãng Vietnam Airlines nhanh chóng chiếm được cảm tình của rất
+            nhiều hành khách trong và ngoài nước. Trong bài viết này, racingbananas.com xin được
+            giới thiệu về Vietnam Airlines, hãy cùngtìm hiểu thêm về lịch sử cũng như dịch vụ của hãng hàng không này
+            nhé !
+        </p>
+        <p><strong></strong></p>
+        <div style="text-align:center">
+            <strong>
+                <img src="https://racingbananas.com/gioi-thieu-ve-vietnam-airlines/imager_1_30376_700.jpg" alt="">
+            </strong>
+        </div>
+        <em>Tất tần tật thông tin về hãng Vietnam Airlines -&nbsp;</em>
+        <em>giới thiệu về Vietnam Airlines</em>
+        <p></p>
+        <h2><strong>1. Lịch sử hình thành và phát triển</strong></h2>
+
+        <p>Để có được thành công như ngày hôm nay, hãng hàng không Quốc gia
+            <strong>Vietnam Airlines</strong>
+            đã trải qua một hành trình dài trưởng thành và phát triển. Có thể tóm tắt quá trình phát triển đó như sau:
+        </p>
+        <strong>Có thể bạn quan tâm:</strong>
+        <strong>cách xem hạng vé máy bay Vietnam Airline</strong>.<p>Bạn đang xem:</p><br>
+        <h2><strong>2. Hệ thống đường bay Vietnam Airlines</strong></h2>
+        <p>Khi <strong>giới thiệu về Vietnam Airlines</strong>chắc chắn không thể bỏ qua được hệ thống đường bay mà hãng
+            này khai thác. Mạng lưới đường bay của <strong>Vietnam Airlines</strong> phủ rộng trên khắp 21 tỉnh thành
+            trên cả nước và 28 điểm đến tại 26 quốc gia và vùng lãnh thổ trên thế giới.</p>
+        <p></p>
+        <div style="text-align:center">
+            <img src="https://racingbananas.com/gioi-thieu-ve-vietnam-airlines/imager_2_30376_700.jpg" alt="">
+        </div>
+        <em>Vietnam Airlines có mạng lưới đường bay rộng khắp thế giới</em>
+        <p></p>
+        <p><strong>Một số đường bay trọng điểm có thể kể đến như:</strong></p>
+        <strong>Đường bay nội địa:</strong> Đường bay đến Hà Nội, Hải Phòng, Thanh Hóa, Điện Biên, Đà Nẵng, Huế, Vinh,
+        Đồng hới, Pleiku, Tuy Hòa, Hồ Chí Minh. Nha Trang, Đà Lạt, Phú Quốc, Chu Lai, Quy Nhơn, Cần Thơ, Côn Đảo, Buôn
+        Ma Thuột, Rạch Gía, Cà Mau.
+        <strong>Đường bay quốc tế:</strong> Đường bay đến Singapore, Bangkok, Phnom Pe, Manila' Jakarta, Luang Prabang
+        (Lào), Yangon,Vientiane, Tokyo, Seoul, New York, Houston, Chicago, Honolulu, Moscow, Amsterdam,…
+        <p>Hiện nay, <strong>máy bay Vietnam Airlines</strong> sử dụng 5 dòng&nbsp;tối tân là: Boeing 787, Airbus A350,
+            Airbus A330, Airbus A321. Chi tiết xem tại bài viết sau:&nbsp;<strong>Các chuyến bay Vietnam Airlines sử
+                dụng loại máy bay nào ?</strong></p>
+        <h2><strong>3. Nhận diện thương hiệu hãng Vietnam Airlines</strong></h2>
+        <p>Toàn bộ máy bay của <strong>Vietnam Airlines</strong> đều được sơn màu xanh dương với phần bụng trắng phía
+            dưới. Phía đuôi của máy bay sơn biểu tượng Bông Sen Vàng. Tuy nhiên, chiếc máy bay Airbus A350 thứ 12 của
+            hãng lại khoác trên mình màu sơn đặc biệt hơn. Toàn thân máy bay được sơn màu trắng với logo Skyteam ở phần
+            đuôi máy bay. Đây cũng là chiếc Airbus A350 duy nhất trên thế giới mang trên mình màu sơn của liên minh
+            Skyteam.</p>
+        <p></p>
+        <div style="text-align:center"><img
+                src="https://racingbananas.com/gioi-thieu-ve-vietnam-airlines/imager_3_30376_700.jpg" alt=""></div>
+        <em>Bông Sen Vàng - Biểu tượng của hãng Vietnam Airlines</em>
+        <p></p>
+        <p>Là hãng hàng không đại diện cho Quốc gia,
+            <strong>Vietnam Airlines</strong> lựa chọn áo dài làm đồng phục cho tiếp viên hàng không nữa với hai màu là
+            vàng hoặc xanh thiên thanh, đi kèm quần trắng và giày cao gót kín mũi đen. Với tiếp viên nam, trang phục
+            tiêu chuẩn là áo sơ mi trắng, quần âu và giày đen. Khi&nbsp;
+            <strong>giới thiệu về Vietnam Airlines</strong> bạn đừng quên những điều này nhé.
+        </p>
+        <h2><strong>4. Quy định hành lý hãng Vietnam Airlines mới nhất</strong></h2><br>
+        <div style="text-align:center"><img
+                src="https://racingbananas.com/gioi-thieu-ve-vietnam-airlines/imager_4_30376_700.jpg" alt=""></div>
+        <p><strong>Hành khách hạng Thương gia:</strong> Tiêu chuẩn hành lý miễn cước là 1 kiện 32kg trên các đường bay
+            nội địa Việt Nam, Đông Nam Á và tới 2 kiện 32kg trên các đường bay Đông Bắc Á, Châu Âu, Châu Mỹ, Australia.
+        </p>
+        <p><strong>Hành khách hạng Phổ thông:</strong> Được mang 1 kiện 23kg trên đường bay nội địa Việt Nam, Đông Bắc
+            Á, Châu Âu, Australia và 2 kiện 23kg trên các đường bay Nhật Bản, Châu Mỹ.</p>
+        <p><strong>Hành khách hạng Phổ thông đặc biệt:</strong> Được hưởng tiêu chuẩn 2 kiện 23kg trên các đường bay Tây
+            Âu, Đông Bắc Á, Australia và châu Mỹ. Riêng trên đường bay Hà Nội - Tp. Hồ Chí Minh, hạng Phổ thông đặc biệt
+            có tiêu chuẩn tương đương hạng Thương gia là 1 kiện 32 kg.</p>
+        <p>Đối với hành lý xách tay, số kiện hành khách được mang theo là không đổi, nhưng trọng lượng kiện được tăng
+            thêm để giúp hành khách thoải mái hơn cho mỗi chuyến đi. Cụ thể:</p>
+        <p><strong>Hạng Phổ thông</strong>: Được mang 1 kiện hành lý xách tay gồm phụ kiện có tổng trọng lượng tối đa
+            12kg (trước đây là 1 kiện 7kg).</p>
+        <p><strong>Hạng Phổ thông đặc biệt và Thương gia</strong>: được mang 2 kiện hành lý xách tay gồm phụ kiện có
+            tổng trọng lượng tối đa 18kg (trước đây là 2 kiện mỗi kiện 7kg).</p>
+        <p>Xem thêm: <a href="https://racingbananas.com/cau-be-mat-banh-bao/">" Cậu Bé Mặt Bánh Bao 2 Trứng, Cậu Bé Mặt
+                Bánh Bao” Đáng Yêu Gây Sốt</a></p>
+        <strong><em>Chi tiết xem tại bài viết sau:</em></strong>
+        <p></p>
+        <h2><strong>5. Các tiện ích đi kèm</strong></h2>
+        <p><strong>Đồ ăn và thức uống:</strong></p>
+        <p>Tùy theo từng hạng ghế mà <strong>Vietnam Airlines</strong> có chế độ phục vụ riêng. Đồ ăn của hãng được đánh
+            giá là ngon, hợp vệ sinh, trình bày đẹp mắt và đa dạng xuất xứ.</p>
+        <p></p>
+        <div style="text-align:center"><img
+                src="https://racingbananas.com/gioi-thieu-ve-vietnam-airlines/imager_5_30376_700.jpg" alt=""></div>
+        <em>Đồ ăn của Vietnam Airlines được đánh giá là phong phú và đẹp mắt -giới thiệu về Vietnam Airlines</em>
+        <p></p>
+        <p><strong>Nguồn điện:</strong></p>
+        <p>Hành khách được cung cấp nguồn điện đầy đủ để sử dụng các thiết bị điện tử cá nhân trên các tàu bay B787,
+            A350 và một số tàu A330,. Riêng với dòng máy bay B747, nhờ hệ thống ánh sáng tiên tiến đa chức năng hành
+            khách có thể tùy chỉnh nguồn sáng theo mong muốn như: ánh sáng trắng cho ban ngày, ánh sáng vàng cho buổi
+            đêm, hoặc ảnh sáng chuyển biến dần đều khi vừa thức giấc.</p>
+        <p><strong>Tiện ích chăm sóc cá nhân:</strong></p>
+        <p>Đối với các chuyến bay trên 4h, hành khách sẽ được Vietnam Airlines cung cấp chăn gối và túi đồ cá nhân cần
+            thiết như bịt mắt, bàn chải, kem đánh răng, nút chống ồn. Riêng hạng Thương gia, hành khách còn được cung
+            cấp thêm nhãn dính nhắn gửi tiếp viên để nhắc báo thức hoặc muốn phục vụ đồ ăn.</p>
+        <p><strong>Tiện ích giải trí:</strong></p>
+        <p>Khi <strong>đặt&nbsp;vé máy bay Vietnam Airlines</strong>, với màn hình giải trí hiện đại, hành khách có thể
+            thưởng thức các bộ phim nổi tiếng, xem tin tức,.. hoặc đơn giản là nghe nhạc. Trên các tàu bay B787, A350 và
+            A330 được trang bị rất nhiều trò chơi điện tử thú vị, chúng sẽ giúp hành khách xua tan cảm giác buồn chán
+            trên chuyến bay.</p>
+        <p><strong>Ngoài ra, hành khách sẽ được cung cấp rất nhiều tờ báo nổi tiếng như:</strong> Heritage, Heritage
+            Fashion. Riêng các đầu báo như Marie Claire, T3 Gadgets, International New York Times, Financial Times...sẽ
+            được cung cấp trên các đường bay có thời gian bay trên 4 giờ.</p>
+        <p><strong>Dịch vụ ưu tiên trên mặt đất ( dánh riêng cho hạng Thương già và Phổ thông đặc biệt):</strong></p>
+        <p><strong>Hạng Thương gia</strong>: Hành khách sẽ được sử dụng Phòng khách Bông Sen và được ưu tiên khi làm thủ
+            tục, gửi hành lý lên máy bay.</p>
+        <p><strong>Hạng Phổ Thông đặc biệt</strong>: Hành khách được ưu tiên tại quầy làm thủ tục, phục vụ hành lý, dịch
+            vụ lên máy bay ưu tiên.</p>
+        <p></p>
+        <div style="text-align:center"><img
+                src="https://racingbananas.com/gioi-thieu-ve-vietnam-airlines/imager_6_30376_700.jpg" alt=""></div>
+        <em>Tiện ích hiện đại, sang trong trên máy bay Vietnam Airlines Airbus A350</em>
+        <p></p>
+        <p>Có thể nói, so với hai hãng Vietjet và Jetstar, giá vé của Vietnam Airlines có cao hơn một chút, nhưng bù lại
+            hành khách sẽ có những trải nghiệm vô cùng tuyệt vời về chất lượng dịch vụ, chính sách chăm sóc khách hàng
+            cũng như các dịch vụ đi kèm của hãng.Trên đây là đôi nét về hãng hàng không quốc gia Việt Nam. Hy vọng qua
+            bài viết
+            <strong>giới thiệu về Vietnam Airlines</strong> trên, bạn đã có cái nhìn tổng quan về hãng hàng không chất
+            lượng cao này.
+        </p>
+        <h2><strong>Mua vé máy bay Vietnam Airlines giá rẻ ở đâu ?</strong></h2>
+        <p><strong>Để đặt vé máy bay Vietnam Airlines với giá ưu đãi nhất, bạn có thể sử dụng 1 trong 2 cách
+                sau:</strong></p>Gọi đến hotline
+        <strong>1900 63 69 69</strong> để được nhân viên của racingbananas.com tư vấn và hỗ trợ book vé rẻ.
+        <p><strong>racingbananas.com luôn sẵn sàng hỗ trợ bạn 24/7 !</strong></p>
+    </div>
+
+</body>
+
+</html>

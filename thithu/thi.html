@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        text-align: center;
+        margin: 0 auto;
+        border: 1px solid black;
+        padding: 10px;
+
+    }
+    .form-group{
+        margin: 10px;
+    }
+    .thongbao{
+        color: red;
+    }
+</style>
+<script>
+    function tinhtien(){
+        var dongia = document.getElementById("price");
+        var soluong = document.getElementById("soluong");
+        document.getElementById("thanhtien").value=Number(dongia.value)*Number(soluong.value);
+    }
+
+    function updatePrice() {
+    const type = document.getElementById("type").value;
+    let price = 0;
+  
+    if (type === "type1") {
+      price = 500000;
+    } else if (type === "type2") {
+      price = 300000;
+    } else if (type === "type3") {
+      price = 100000;
+    }
+    document.getElementById("price").value = price;
+  }
+
+
+
+    function noinhan(){
+        var huynh =document.getElementsByName("hhh");
+        var pvc = document.getElementById("pvc");
+        if(huynh[0].checked){
+            pvc.value=0;
+        }
+        if(huynh[1].checked){
+            pvc.value=30000;
+        }
+    }
+    function datmua(){
+        let thongBao=document.getElementsByClassName('thongbao');
+        var kh=document.getElementById('khachhang');
+        var lh=document.getElementById('type');
+        var soLuong=document.getElementById("soluong");
+        var hhh=document.getElementsByName("hhh");
+        //khách hàng
+        if(kh.value==""||kh.value==null){
+        thongBao[0].innerHTML="mời nhập tên";
+        } 
+        else if(kh.value){
+         thongBao[0].innerHTML=null;
+        }
+        //loại hàng
+        if(lh.value=="chuachon"){
+            thongBao[1].innerHTML="mời chọn loại hàng";
+        }else if(lh.value){
+            thongBao[1].innerHTML=null;
+        }
+        //số lượng
+        if(soLuong.value==""||soLuong==null){
+            thongBao[2].innerHTML="mời nhập số lượng";
+        }else if(soLuong.value){
+            thongBao[2].innerHTML=null;
+        }
+        //nơi nhận
+        if(!hhh[0].checked&&!hhh[1].checked){
+            thongBao[3].innerHTML="mời chọn nơi nhận";
+        }else if (hhh[0].checked||hhh[1].checked){
+            thongBao[3].innerHTML=null;
+        }
+
+
+
+
+
+       
+    }
+</script>
+
+
+<body>
+    <div class="contauner">
+        <h2>HOÁ ĐƠN</h2>
+        <div>
+        <div class="form-group">
+            <label for=""> Khách hàng</label>
+            <input type="text" id="khachhang"> 
+            <span class="thongbao"></span>
+        </div>
+       
+
+        <div class="form-group">
+            <label for="type">Loại hàng</label>
+            <select id="type" onchange="updatePrice()">
+                <option value="chuachon">chọn loại</option>
+              <option value="type1">Loại 1</option>
+              <option value="type2">Loại 2</option>
+              <option value="type3">Loại 3</option>
+              
+            </select><span class="thongbao"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="price">Đơn giá:</label>
+            <input type="number" id="price" name="price" min="0" step="1" value="0" readonly onchange="tinhtien();">  
+        </div>
+
+        <div class="form-group">
+            <label for="">Số lượng</label>
+            <input type="text" id="soluong" onchange="tinhtien();">
+             <span class="thongbao"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="">Thành tiền</label>
+            <input type="text" id="thanhtien">
+        </div>
+        <div class="form-group">
+            <label for="">Nơi nhận hàng</label>
+            <fieldset id="noinhanhang" onchange="noinhan();">
+                <input type="radio" name="hhh" id="nh"> <label for="nh">Nội thành</label> 
+                <input type="radio" name="hhh" id="nt"> <label for="nt"> Ngoại thành</label>
+            </fieldset><span class="thongbao"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="">Phí vận chuyển</label>
+            <input type="text" id="pvc">
+        </div>
+        <div class="nut">
+            <button type="submit" onclick="datmua()">ĐẶT MUA</button>
+        </div>
+        
+    </div>
+    </div>
+    
+</body>
+</html>

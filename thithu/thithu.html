@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="thithu.js"></script>
+    <link rel="stylesheet" href="thithu.css">
+</head>
+<style>
+    
+    body img{
+        margin-left: 80px;
+    }
+    .lui{
+        margin-top: -40px;
+        margin-left: -4px;
+    }
+    .tien{
+        margin-left: 599px;
+        margin-top: -20px;
+    }span{
+        color: red;
+    }
+   
+  
+</style>
+
+<body>
+    <div class="sli" >
+        <div><img src="https://iptime.com.vn/wp -content/uploads/2018/12/logo-fpt.jpgid=" id="anh" width="500px" height="400px"></div>
+        <div class="bt">
+        <div class="lui"> <button id="change2" onclick="change2()">Previous</button></div>
+        <div class="tien"><button id="change" onclick="change()">next</button></div> 
+    </div>
+    </div><br><br>
+<div class="from">
+    <table >
+          <strong>ĐĂNG KÍ THÀNH VIÊN</strong>
+        <br>
+
+        <div class="ht">
+            <label for="">Họ tên</label>
+        <input type="text" id="hoten"></div> 
+        <span class="thongbao"></span>
+        <br>
+        
+         
+    <div class="ht">
+        <label for="">Email</label>
+        <input type="text" id="email"></div>
+        <span class="thongbao"></span>
+        <br> 
+    
+
+    <div>
+      <label for="">Số điện thoại</label>
+      <input type="text" id="sdt"> </div>
+      <span class="thongbao"></span>
+      <br> 
+   
+
+    <div>
+      <label for="">User</label>
+      <input type="text" id="user">  </div>
+      <span class="thongbao"></span>
+      <br>  
+  
+
+    <div>
+      <label for="">Pass</label>
+      <input type="text" id="pass"> </div>
+      <span class="thongbao"></span>
+      <br> 
+   
+
+    <div>
+      <label for="">Repass</label>
+      <input type="text" id="repass"> </div>
+      <span class="thongbao"></span>
+      <br> 
+   
+
+      Bạn biết chúng tôi
+       <input type="radio" name="huynh" id="gt">
+       <label for="gt">Bạn giới thiệu</label>
+      <input type="radio" name="huynh" id="fb">
+      <label for="fb">Qua FB</label>
+<br>
+<button onclick="dk()">Đăng kí</button>
+     
+    </table>
+ </div>
+    
+ <footer></footer>
+
+</body>
+
+<script>
+    let arr = [
+        "https://iptime.com.vn/wp-content/uploads/2018/12/logo-fpt.jpg",
+        "https://tuyendung.fpt.com.vn/public/img/logo-footer.png",
+        "https://3.bp.blogspot.com/-ar7ZRi8e4ak/UWtWildg6nI/AAAAAAAABIE/dAv1AKfxq1o/s1600/LOGO+FPT.jpg",
+        "https://www.journeysendmarina.com/wp-content/uploads/2017/10/FPT-logo.png",
+        "https://seeklogo.com/images/F/FPT-logo-ABD95E6015-seeklogo.com.png"
+    ]
+    let id = 0;
+    function change() {
+        id++;
+        if (id >= arr.length)
+            id = 0
+        let anh = document.getElementById('anh')
+        let img = arr[id];
+        anh.src = img
+    }
+    function change2() {
+        id--;
+        if (id < 0) {
+            id = arr.length - 1;
+        }
+        let anh = document.getElementById('anh')
+        let img = arr[id];
+        anh.src = img
+    }
+</script>
+
+</html>

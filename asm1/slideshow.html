@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai2 </title>
+</head>
+<body>
+    <img src="https://th.bing.com/th/id/R.f6aae1ead3a6b4c21d70afe08fbb6118?rik=oE5gJupEvf8wBQ&pid=ImgRaw&r=0" id="anh"
+        width="500px" height="400px">
+    <div class="bt">
+    <button id="change2" onclick="change2()">lùi</button>
+    <button id="change" onclick="change()"> tiến</button></div>
+
+</body>
+
+<script>
+
+
+let arr = [
+        "https://th.bing.com/th/id/R.f6aae1ead3a6b4c21d70afe08fbb6118?rik=oE5gJupEvf8wBQ&pid=ImgRaw&r=0",
+        "https://giupban.com.vn/wp-content/uploads/Hinh-nen-may-bay-dep-full-hd-Ohaylam.com-14.jpg",
+        "https://giupban.com.vn/wp-content/uploads/sai-canh-bay-cao-cung-ve-may-bay-gia-re-bao-ngoc.jpg"
+    ]
+    let id = 0;
+    function change() {
+        id++;
+        if (id >= arr.length)
+            id = 0
+        let anh = document.getElementById('anh')
+        let img = arr[id];
+        anh.src = img
+    }
+    function change2() {
+        id--;
+        if (id < 0) {
+            id = arr.length - 1;
+        }
+        let anh = document.getElementById('anh')
+        let img = arr[id];
+        anh.src = img
+    }
+</script>
+</html>

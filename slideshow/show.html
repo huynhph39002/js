@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .slide{
+        display: none;
+    }
+    .slide img{
+        width: 30%;
+        height: 300px;
+    }
+</style>
+<script>
+    let indexx=0;
+    function slideshow(){
+        let anh=document.getElementsByName('slide');
+        if(indexx>anh.length -1){
+            indexx=0;
+        }
+        if(indexx<0){
+            indexx=anh.length -1;
+        }
+        for (let i= 0; i < anh.length; i++) {
+          anh[i].slide.display="none";
+        }
+        anh[indexx].slide.display="block";
+    }
+    slideshow();
+    function prive(){
+        indexx++;
+        slideshow();
+    }
+    function last() {
+        indexx--;
+        slideshow;
+        
+    }
+    function auto(){
+       let a= setInterval(function(){prive()},1500);
+    }
+    function stop(){
+        clearInterval(a);
+    }
+
+</script>
+<body>
+    <div class="slide">
+        <h2>1/3</h2>
+        <img src="" alt="">
+    </div>
+    <div class="slide">
+        <h2>1/3</h2>
+        <img src="" alt="">
+    </div>
+    <div class="slide">
+        <h2>1/3</h2>
+        <img src="" alt="">
+    </div>
+    <button type="button" onclick="prive()">trước </button>
+    <button type="button" onclick="last()">sau</button>
+    <button type="button" onclick="auto()">auto</button>
+    <button type="button" onclick="stop()">stop</button>
+    
+</body>
+</html>
